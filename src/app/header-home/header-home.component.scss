@@ -1,0 +1,23 @@
+
+// Per cambiare il colore dei Navbar link ho cambiato ultima riga in Node_modules nella sezione Hero, come segue:
+
+// Colors
+// @each $name, $pair in $colors
+//$color: nth($pair, 1)
+//$color-invert: nth($pair, 2)
+//&.is-#{$name}
+//background-color: $color
+//color: $color-invert
+//a:not(.button):not(.dropdown-item):not(.tag),
+//strong
+//color: white (prima era inherit)
+
+.hero {
+  background: black url(../../assets/grande_via_header.jpg) center / cover;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+

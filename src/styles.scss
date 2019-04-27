@@ -1,12 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-@charset "utf-8";
 @import "../node_modules/bulma/bulma.sass";
-//ciao fes
 
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300, 400');
-
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
 
 //Generic
 $body-background-color: $white;
@@ -46,7 +43,7 @@ $white:        hsl(0, 0%, 100%);
 $orange:       hsl(14,  100%, 53%);
 $yellow:       hsl(48,  100%, 67%);
 $green:        hsl(141, 71%,  48%);
-$turquoise:    hsl(171, 100%, 41%);
+$turquoise:    hsl(0, 100%, 35%);
 $cyan:         hsl(204, 86%,  53%);
 $blue:         hsl(217, 71%,  53%);
 $purple:       hsl(271, 100%, 71%);
@@ -54,7 +51,7 @@ $red:          hsl(348, 100%, 61%);
 
 // Typography
 
-$family-sans-serif: Ubuntu, "-apple-system", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-sans-serif: "Raleway", "-apple-system", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $family-monospace: monospace;
 $render-mode: optimizeLegibility;
 $size-1: 3rem;
@@ -69,6 +66,7 @@ $weight-normal: 400;
 $weight-medium: 500;
 $weight-semibold: 600;
 $weight-bold: 700;
+$weight-extra-bold: 800;
 
 // Responsiveness
 
@@ -149,7 +147,7 @@ $pre-background: $background;
 
 // Link colors
 
-$link: $blue;
+$link: $turquoise;
 $link-invert: $blue-invert;
 $link-visited: $purple;
 $link-hover: $grey-darker;
@@ -212,13 +210,13 @@ $card-footer-background-color: transparent;
 $card-footer-border-top: 1px solid $border;
 
 //Dropdown
-$dropdown-content-background-color: $white;
+$dropdown-content-background-color: $primary;
 $dropdown-content-arrow: $link;
 $dropdown-content-offset: 4px;
 $dropdown-content-radius: $radius;
-$dropdown-content-shadow: 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1); $dropdown-content-z: 20;
-
-$dropdown-item-color: $grey-dark;
+$dropdown-content-shadow: 0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1);
+$dropdown-content-z: 20;
+$dropdown-item-color: $white;
 $dropdown-item-hover-color: $black;
 $dropdown-item-hover-background-color: $background;
 $dropdown-item-active-color: $link-invert;
@@ -291,18 +289,18 @@ $modal-card-body-padding: 20px;
 $navbar-background-color: $white;
 $navbar-box-shadow-size: 0 2px 0 0;
 $navbar-box-shadow-color: $background;
-$navbar-height: 3.25rem;
+$navbar-height: 4.25rem;
 $navbar-padding-vertical: 1rem;
 $navbar-padding-horizontal: 2rem;
 $navbar-z: 30;
 $navbar-fixed-z: 30;
-$navbar-item-color: $grey-dark;
+$navbar-item-color: $white;
 $navbar-item-hover-color: $link;
-$navbar-item-hover-background-color: $white-bis;
+$navbar-item-hover-background-color: $primary;
 $navbar-item-active-color: $black;
 $navbar-item-active-background-color: transparent;
 $navbar-item-img-max-height: 1.75rem;
-$navbar-burger-color: $navbar-item-color;
+$navbar-burger-color: white;
 $navbar-tab-hover-background-color: transparent;
 $navbar-tab-hover-border-bottom-color: $link;
 $navbar-tab-active-color: $link;
@@ -310,8 +308,8 @@ $navbar-tab-active-background-color: transparent;
 $navbar-tab-active-border-bottom-color: $link;
 $navbar-tab-active-border-bottom-style: solid;
 $navbar-tab-active-border-bottom-width: 3px;
-$navbar-dropdown-background-color: $white;
-$navbar-dropdown-border-top: 2px solid $border;
+$navbar-dropdown-background-color: $primary;
+$navbar-dropdown-border-top: 0px solid $border;
 $navbar-dropdown-offset: -4px;
 $navbar-dropdown-arrow: $link;
 $navbar-dropdown-radius: $radius-large;
@@ -490,7 +488,7 @@ $icon-dimensions-medium: 2rem;
 $icon-dimensions-large: 3rem;
 
 //Image
-$dimensions: 16 24 32 48 64 96 128;
+$dimensions: 16 24 32 48 64 96 128 256;
 
 //Notification
 $notification-background-color: $background;
