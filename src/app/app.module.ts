@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {enableProdMode, NgModule} from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderHomeComponent } from './header-home/header-home.component';
@@ -27,6 +27,8 @@ import { CommonModule } from '@angular/common';
 import { TransferHttpCacheModule } from '@nguniversal/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgtUniversalModule } from '@ng-toolkit/universal';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,8 @@ import { NgtUniversalModule } from '@ng-toolkit/universal';
     RespiroDellaTerraComponent,
     GrandeViaDeiPiccoliComponent,
     MasterComponent,
-    LaGuidaNomadeComponent
+    LaGuidaNomadeComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -59,7 +62,8 @@ import { NgtUniversalModule } from '@ng-toolkit/universal';
     CommonModule,
     TransferHttpCacheModule,
     HttpClientModule,
-    NgtUniversalModule
+    NgtUniversalModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

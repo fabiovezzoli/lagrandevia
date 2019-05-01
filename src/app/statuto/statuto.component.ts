@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StatutoComponent implements OnInit {
 
+  title = 'Statuto Societario - La Grande Via';
+
   constructor() { }
 
   ngOnInit() {

@@ -1,0 +1,29 @@
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="field container">
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <label class="label">
+      Nome:
+      <input class="input" type="text" formControlName="firstName">
+    </label>
+    <label class="label">
+      Cognome:
+      <input class="input" type="text" formControlName="lastName">
+    </label>
+    <div class="control">
+      <button type="submit" class="button is-primary">Submit</button>
+    </div>
+  </form>
+  <br>
+  <label>Il nome di chi scrive?  {{contactForm.get('firstName').value}}</label><br>
+  <label>Il cognome di chi scrive?  {{contactForm.get('lastName').value}}</label>
+</div>
+
+<br>
+<br>
+<br>
+<br>
