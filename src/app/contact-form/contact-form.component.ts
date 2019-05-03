@@ -12,7 +12,7 @@ export class ContactFormComponent implements OnInit {
   contactForm = new FormGroup({
     firstName: new FormControl('Nome'),
     lastName: new FormControl('Cognome')
-  })
+  });
 
   constructor() { }
 
